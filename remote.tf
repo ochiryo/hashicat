@@ -1,3 +1,4 @@
+/*
 terraform {
 backend "remote" {
 organization = "terraform-workshop-fujitsu"
@@ -7,6 +8,7 @@ name = "dev-ochir-hashicat-app"
 }
 }
 
+*/
 /*
 terraform {
   backend "remote" {
