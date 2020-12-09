@@ -1,0 +1,605 @@
+
+*** These modified files were found in JOE when it aborted on Wed Dec  9 04:56:42 2020
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+terraform.tfstate
+
+*** File 'terraform.tfstate'
+{
+  "version": 4,
+  "terraform_version": "0.14.2",
+  "serial": 19,
+  "lineage": "32c5b22b-320d-3625-ccac-c9c75c179ad3",
+  "outputs": {
+    "catapp_url": {
+      "value": "http://ec2-52-196-143-196.ap-northeast-1.compute.amazonaws.com",
+      "type": "string"
+    },
+    "key_pem": {
+      "value": "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAz7wqVA24TbdCwu38c1kznpIEaizkyGH4KObvfI6xAM0QWzuc\nMPkEMnBWCJk1XPJZyuTvucMMBG792pGBr4Xnhm2FScqH0JxvFAVD5444W8gY81uD\net0wad+Gh0U0CSophGvIPsoOTToQxNegjSn23Jhw4ceI4YGFMjpsxRd74qiHo66d\nsQ2Mhesu325djCoE0rcAIdgVpjmeLC0l9eHV1i/muD02jSG6qUI6wCureb17SPc3\n1SGNauEneGJp3Cti5Bm3NUZX+tlC7Kym/8zGo+ggQ0tPmgKRcTR3uSvwAixCM9Dn\ncgqh+GKjpH/DISUjmXZY2sGOODayROubQgR8awIDAQABAoIBAH7DnDDejnEeO6co\nAr2A2XcSM493BcUhw4VyJwIjMPAEMs75eT6JNn5w/o8QrvehDBo7ye3ZkCPEdzRB\nRpoNZFMr0gJNjMNIMqBM9jr/FnUrjc4zMfBvuXNh633wROiyydL80p0+P6vwmvsD\nef2qdfH3NCsSz/yMRPN5o5ZB1l9gzjQ97awHVIbCg9oCesK6OdU37SoLr1KVT8ci\nncHxcywAsOSWG8pS8FFUZW3ELFCBueqKChzvnWzgI/vrP/MLXRGqH8QDTu9tr+7d\nKybpqR111ioE6Mi2RS7ULb9NwSp29YGTFboxO9Gqz3hGjR1jt32aM7o+JEqCUqnZ\nDop0yUECgYEA2WHx6eFpp5hKQ/bypfLFWWVx3Wh8wKNb1lOdKwxqedKPpCR+aBza\n2s29ZhDGimkeMD1Vs/o6l8xCJoyZjKQB6+Mc2Yfupaa0tJGc07AqQ9DjsMVh5QvO\njIoh+dAuoXqfU5zCPp5ZUTuxaVZ9mqmgwR0gyJp1sidWzfECl5DPJPUCgYEA9KN4\nlJyNNF4XqE5Mxy9bKqL6dLLzNoBAI/HYTxKKvEEn75UvhIoYTrNJ5VCLHSSbVZ5f\nyFRpvDxDBkWp23AdEj26b+Tv7P+Djh8qFVid9AEqGmGfwgmtWYVAgCQdaZ5JfQCZ\nCLW9xa7FmiaJunEpZ3HTRq9O4/K4emX2r2CvP98CgYBPTgk4XvDxoIBvfRcW7ZOL\nwpOgx67DhJVLgqOTAeuSV/vpURsAlo5NRsOzCam08xZ9WNL8XuyjVnRHpgGaqna8\n/NUYkxvAOSoxufGx1NIGfZ2jbs8BBaar5PTyMz3f0WFw2n6O46wIE7Psjw4xr3Kj\nISJFrPwFK47igOuGKeE4RQKBgHbO/TyPWzRXjf27KSaDJS9rv171mZCacIwEZBzi\n0GXk7tQ4C7++oVd3Uyf/GdCpepb2N2Y/OKqmSZa+NmPP6w501BqLgMoEvYtEL1f2\nlZ9vAVeWmdPOh1W2lUCmSXKF4QLIS4ojWWqsGmNm2/SkCIuoiAcIFLQ3qMgoxMkf\nl3zZAoGBAM4a1IGdGEQcoySoJqm8qjVg1PPA7k4RxHS8leYGNdFPog4OzQ8sG4C9\nsFeWxvqsVJn/6y+URV22YBC9TMuwZjX6Qfx1GmnOECccQu3MxuBYu5dv5ExvBAbp\nHUufrolxR/5znPNEM2960bjxn+y4L1JCgzoyYRrEqyFlu7GtocDy\n-----END RSA PRIVATE KEY-----\n",
+      "type": "string"
+    }
+  },
+vq!qqqqq::
+
+
+
+
+
+qqq  "resources": [
+    {
+      "mode": "data",
+      "type": "aws_ami",
+      "name": "ubuntu",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "architecture": "x86_64",
+            "arn": "arn:aws:ec2:ap-northeast-1::image/ami-01c8698409e4827ea",
+            "block_device_mappings": [
+              {
+                "device_name": "/dev/sda1",
+                "ebs": {
+                  "delete_on_termination": "true",
+                  "encrypted": "false",
+                  "iops": "0",
+                  "snapshot_id": "snap-06379892f918c8e37",
+                  "volume_size": "8",
+                  "volume_type": "gp2"
+                },
+                "no_device": "",
+                "virtual_name": ""
+              },
+              {
+                "device_name": "/dev/sdb",
+                "ebs": {},
+                "no_device": "",
+                "virtual_name": "ephemeral0"
+              },
+              {
+                "device_name": "/dev/sdc",
+                "ebs": {},
+                "no_device": "",
+                "virtual_name": "ephemeral1"
+              }
+            ],
+            "creation_date": "2020-12-01T19:53:09.000Z",
+            "description": "Canonical, Ubuntu, 18.04 LTS, amd64 bionic image build on 2020-12-01",
+            "executable_users": null,
+            "filter": [
+              {
+                "name": "name",
+                "values": [
+                  "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"
+                ]
+              },
+              {
+                "name": "virtualization-type",
+                "values": [
+                  "hvm"
+                ]
+              }
+            ],
+            "hypervisor": "xen",
+            "id": "ami-01c8698409e4827ea",
+            "image_id": "ami-01c8698409e4827ea",
+            "image_location": "099720109477/ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20201201",
+            "image_owner_alias": null,
+            "image_type": "machine",
+            "kernel_id": null,
+            "most_recent": true,
+            "name": "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20201201",
+            "name_regex": null,
+            "owner_id": "099720109477",
+            "owners": [
+              "099720109477"
+            ],
+            "platform": null,
+            "product_codes": [],
+            "public": true,
+            "ramdisk_id": null,
+            "root_device_name": "/dev/sda1",
+            "root_device_type": "ebs",
+            "root_snapshot_id": "snap-06379892f918c8e37",
+            "sriov_net_support": "simple",
+            "state": "available",
+            "state_reason": {
+              "code": "UNSET",
+              "message": "UNSET"
+            },
+            "tags": {},
+            "virtualization_type": "hvm"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "template_file",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/template\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "filename": null,
+            "id": "bd3c12e87d4cad2b7840cd080dcf2ff179a3b1f718f75a280bcb7acdf7aa5e9c",
+            "rendered": "#!/usr/bin/env bash\n\nset -x\nexec \u003e \u003e(tee /tmp/tf-user-data.log|logger -t hashicat ) 2\u003e\u00261\n\nlogger() {\n\tDT=$(date '+%Y/%m/%d %H:%M:%S')\n\techo \"$DT $0: $1\"\n}\n\t\nsudo add-apt-repository universe\nsudo apt -y update\nsudo apt -y install apache2\nsudo systemctl start apache2\nsudo chown -R ubuntu:ubuntu /var/www/html\n\necho \"Generating a site\"\n\ncat \u003c\u003c EOM \u003e /var/www/html/index.html\n\u003chtml\u003e\n  \u003chead\u003e\u003ctitle\u003eMeow!\u003c/title\u003e\u003c/head\u003e\n  \u003cbody\u003e\n  \u003cdiv style=\"width:800px;margin: 0 auto\"\u003e\n\n  \u003c!-- BEGIN --\u003e\n  \u003ccenter\u003e\u003cimg src=\"http://placedog.net/600/400\"\u003e\u003c/img\u003e\u003c/center\u003e\n  \u003ccenter\u003e\u003ch2\u003eMeow World!\u003c/h2\u003e\u003c/center\u003e\n  Welcome to ochir's app. WELCOME TO THE WORKSHOP!\n  \u003c!-- END --\u003e\n\n  \u003c/div\u003e\n  \u003c/body\u003e\n\u003c/html\u003e\nEOM\n\necho \"Script complete.\"\n",
+            "template": "#!/usr/bin/env bash\n\nset -x\nexec \u003e \u003e(tee /tmp/tf-user-data.log|logger -t hashicat ) 2\u003e\u00261\n\nlogger() {\n\tDT=$(date '+%Y/%m/%d %H:%M:%S')\n\techo \"$DT $0: $1\"\n}\n\t\nsudo add-apt-repository universe\nsudo apt -y update\nsudo apt -y install apache2\nsudo systemctl start apache2\nsudo chown -R ubuntu:ubuntu /var/www/html\n\necho \"Generating a site\"\n\ncat \u003c\u003c EOM \u003e /var/www/html/index.html\n\u003chtml\u003e\n  \u003chead\u003e\u003ctitle\u003eMeow!\u003c/title\u003e\u003c/head\u003e\n  \u003cbody\u003e\n  \u003cdiv style=\"width:800px;margin: 0 auto\"\u003e\n\n  \u003c!-- BEGIN --\u003e\n  \u003ccenter\u003e\u003cimg src=\"http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}\"\u003e\u003c/img\u003e\u003c/center\u003e\n  \u003ccenter\u003e\u003ch2\u003eMeow World!\u003c/h2\u003e\u003c/center\u003e\n  Welcome to ${PREFIX}'s app. WELCOME TO THE WORKSHOP!\n  \u003c!-- END --\u003e\n\n  \u003c/div\u003e\n  \u003c/body\u003e\n\u003c/html\u003e\nEOM\n\necho \"Script complete.\"\n",
+            "vars": {
+              "HEIGHT": "400",
+              "PLACEHOLDER": "placedog.net",
+              "PREFIX": "ochir",
+              "WIDTH": "600"
+            }
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_eip",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allocation_id": null,
+            "associate_with_private_ip": null,
+            "association_id": "eipassoc-0b27a2f37556a3f67",
+            "customer_owned_ip": "",
+            "customer_owned_ipv4_pool": "",
+            "domain": "vpc",
+            "id": "eipalloc-042893cc4b0b5a242",
+            "instance": "i-062c66501d8129509",
+            "network_border_group": "ap-northeast-1",
+            "network_interface": "eni-0ad72809604243666",
+            "private_dns": "ip-10-0-10-160.ap-northeast-1.compute.internal",
+            "private_ip": "10.0.10.160",
+            "public_dns": "ec2-52-196-143-196.ap-northeast-1.compute.amazonaws.com",
+            "public_ip": "52.196.143.196",
+            "public_ipv4_pool": "amazon",
+            "tags": {},
+            "timeouts": null,
+            "vpc": true
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjoxODAwMDAwMDAwMDAsInJlYWQiOjkwMDAwMDAwMDAwMCwidXBkYXRlIjozMDAwMDAwMDAwMDB9fQ==",
+          "dependencies": [
+            "aws_instance.hashicat",
+            "aws_key_pair.hashicat",
+            "aws_security_group.hashicat",
+            "aws_subnet.hashicat",
+            "aws_vpc.hashicat",
+            "data.aws_ami.ubuntu",
+            "data.template_file.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_eip_association",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allocation_id": "eipalloc-042893cc4b0b5a242",
+            "allow_reassociation": null,
+            "id": "eipassoc-0b27a2f37556a3f67",
+            "instance_id": "i-062c66501d8129509",
+            "network_interface_id": "eni-0ad72809604243666",
+            "private_ip_address": "10.0.10.160",
+            "public_ip": "52.196.143.196"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_eip.hashicat",
+            "aws_instance.hashicat",
+            "aws_key_pair.hashicat",
+            "aws_security_group.hashicat",
+            "aws_subnet.hashicat",
+            "aws_vpc.hashicat",
+            "data.aws_ami.ubuntu",
+            "data.template_file.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_instance",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "ami": "ami-01c8698409e4827ea",
+            "arn": "arn:aws:ec2:ap-northeast-1:000152658638:instance/i-062c66501d8129509",
+            "associate_public_ip_address": true,
+            "availability_zone": "ap-northeast-1c",
+            "cpu_core_count": 1,
+            "cpu_threads_per_core": 1,
+            "credit_specification": [
+              {
+                "cpu_credits": "standard"
+              }
+            ],
+            "disable_api_termination": false,
+            "ebs_block_device": [],
+            "ebs_optimized": false,
+            "ephemeral_block_device": [],
+            "get_password_data": false,
+            "hibernation": false,
+            "host_id": null,
+            "iam_instance_profile": "",
+            "id": "i-062c66501d8129509",
+            "instance_initiated_shutdown_behavior": null,
+            "instance_state": "running",
+            "instance_type": "t2.small",
+            "ipv6_address_count": 0,
+            "ipv6_addresses": [],
+            "key_name": "ochir-ssh-key",
+            "metadata_options": [
+              {
+                "http_endpoint": "enabled",
+                "http_put_response_hop_limit": 1,
+                "http_tokens": "optional"
+              }
+            ],
+            "monitoring": false,
+            "network_interface": [],
+            "outpost_arn": "",
+            "password_data": "",
+            "placement_group": "",
+            "primary_network_interface_id": "eni-0ad72809604243666",
+            "private_dns": "ip-10-0-10-160.ap-northeast-1.compute.internal",
+            "private_ip": "10.0.10.160",
+            "public_dns": "ec2-13-112-196-189.ap-northeast-1.compute.amazonaws.com",
+            "public_ip": "13.112.196.189",
+            "root_block_device": [
+              {
+                "delete_on_termination": true,
+                "device_name": "/dev/sda1",
+                "encrypted": false,
+                "iops": 100,
+                "kms_key_id": "",
+                "volume_id": "vol-067d5b374a9571352",
+                "volume_size": 8,
+                "volume_type": "gp2"
+              }
+            ],
+            "secondary_private_ips": [],
+            "security_groups": [],
+            "source_dest_check": true,
+            "subnet_id": "subnet-0a66beb4e99f8c6bc",
+            "tags": {
+              "Environment": "dev",
+              "Name": "ochir-hashicat-instance"
+            },
+            "tenancy": "default",
+            "timeouts": null,
+            "user_data": "2c188eb3a98e2042eeca0f9224812e1ebaf97a2c",
+            "user_data_base64": null,
+            "volume_tags": {},
+            "vpc_security_group_ids": [
+              "sg-094684c9944149e91"
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMCwidXBkYXRlIjo2MDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
+          "dependencies": [
+            "aws_key_pair.hashicat",
+            "aws_security_group.hashicat",
+            "aws_subnet.hashicat",
+            "aws_vpc.hashicat",
+            "data.aws_ami.ubuntu",
+            "data.template_file.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_internet_gateway",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-1:000152658638:internet-gateway/igw-00a55a799e63731c2",
+            "id": "igw-00a55a799e63731c2",
+            "owner_id": "000152658638",
+            "tags": {},
+            "vpc_id": "vpc-09cc82f6295314f27"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_vpc.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_key_pair",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-1:000152658638:key-pair/ochir-ssh-key",
+            "fingerprint": "10:4a:10:83:cb:0e:cf:1b:ec:ce:ad:82:67:a9:3c:97",
+            "id": "ochir-ssh-key",
+            "key_name": "ochir-ssh-key",
+            "key_name_prefix": null,
+            "key_pair_id": "key-00baedc9fa8c56b23",
+            "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPvCpUDbhNt0LC7fxzWTOekgRqLOTIYfgo5u98jrEAzRBbO5ww+QQycFYImTVc8lnK5O+5wwwEbv3akYGvheeGbYVJyofQnG8UBUPnjjhbyBjzW4N63TBp34aHRTQJKimEa8g+yg5NOhDE16CNKfbcmHDhx4jhgYUyOmzFF3viqIejrp2xDYyF6y7fbl2MKgTStwAh2BWmOZ4sLSX14dXWL+a4PTaNIbqpQjrAK6t5vXtI9zfVIY1q4Sd4YmncK2LkGbc1Rlf62ULsrKb/zMaj6CBDS0+aApFxNHe5K/ACLEIz0OdyCqH4YqOkf8MhJSOZdljawY44NrJE65tCBHxr",
+            "tags": {}
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
+          "dependencies": [
+            "tls_private_key.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_route_table",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "rtb-06dc344bcdee80bd4",
+            "owner_id": "000152658638",
+            "propagating_vgws": [],
+            "route": [
+              {
+                "cidr_block": "0.0.0.0/0",
+                "egress_only_gateway_id": "",
+                "gateway_id": "igw-00a55a799e63731c2",
+                "instance_id": "",
+                "ipv6_cidr_block": "",
+                "local_gateway_id": "",
+                "nat_gateway_id": "",
+                "network_interface_id": "",
+                "transit_gateway_id": "",
+                "vpc_endpoint_id": "",
+                "vpc_peering_connection_id": ""
+              }
+            ],
+            "tags": {},
+            "vpc_id": "vpc-09cc82f6295314f27"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_internet_gateway.hashicat",
+            "aws_vpc.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_route_table_association",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "gateway_id": null,
+            "id": "rtbassoc-014f001c4555af0b6",
+            "route_table_id": "rtb-06dc344bcdee80bd4",
+            "subnet_id": "subnet-0a66beb4e99f8c6bc"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_internet_gateway.hashicat",
+            "aws_route_table.hashicat",
+            "aws_subnet.hashicat",
+            "aws_vpc.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_security_group",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-1:000152658638:security-group/sg-094684c9944149e91",
+            "description": "Managed by Terraform",
+            "egress": [
+              {
+                "cidr_blocks": [
+                  "0.0.0.0/0"
+                ],
+                "description": "",
+                "from_port": 0,
+                "ipv6_cidr_blocks": [],
+                "prefix_list_ids": [],
+                "protocol": "-1",
+                "security_groups": [],
+                "self": false,
+                "to_port": 0
+              }
+            ],
+            "id": "sg-094684c9944149e91",
+            "ingress": [
+              {
+                "cidr_blocks": [
+                  "0.0.0.0/0",
+                  "0.0.0.0/0"
+                ],
+                "description": "",
+                "from_port": 22,
+                "ipv6_cidr_blocks": [],
+                "prefix_list_ids": [],
+                "protocol": "tcp",
+                "security_groups": [],
+                "self": false,
+                "to_port": 22
+              },
+              {
+                "cidr_blocks": [
+                  "0.0.0.0/0"
+                ],
+                "description": null,
+                "from_port": 443,
+                "ipv6_cidr_blocks": [],
+                "prefix_list_ids": [],
+                "protocol": "tcp",
+                "security_groups": [],
+                "self": false,
+                "to_port": 443
+              },
+              {
+                "cidr_blocks": [
+                  "0.0.0.0/0"
+                ],
+                "description": null,
+                "from_port": 80,
+                "ipv6_cidr_blocks": [],
+                "prefix_list_ids": [],
+                "protocol": "tcp",
+                "security_groups": [],
+                "self": false,
+                "to_port": 80
+              }
+            ],
+            "name": "ochir-security-group",
+            "name_prefix": "",
+            "owner_id": "000152658638",
+            "revoke_rules_on_delete": false,
+            "tags": {},
+            "timeouts": null,
+            "vpc_id": "vpc-09cc82f6295314f27"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
+          "dependencies": [
+            "aws_vpc.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-1:000152658638:subnet/subnet-0a66beb4e99f8c6bc",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "ap-northeast-1c",
+            "availability_zone_id": "apne1-az1",
+            "cidr_block": "10.0.10.0/24",
+            "id": "subnet-0a66beb4e99f8c6bc",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "map_public_ip_on_launch": false,
+            "outpost_arn": "",
+            "owner_id": "000152658638",
+            "tags": {},
+            "timeouts": null,
+            "vpc_id": "vpc-09cc82f6295314f27"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.hashicat"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_vpc",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:ap-northeast-1:000152658638:vpc/vpc-09cc82f6295314f27",
+            "assign_generated_ipv6_cidr_block": false,
+            "cidr_block": "10.0.0.0/16",
+            "default_network_acl_id": "acl-08b161f2d37e00cef",
+            "default_route_table_id": "rtb-094275d701114db55",
+            "default_security_group_id": "sg-087fa1002e118f219",
+            "dhcp_options_id": "dopt-0c951c78601ed52d4",
+            "enable_classiclink": false,
+            "enable_classiclink_dns_support": false,
+            "enable_dns_hostnames": true,
+            "enable_dns_support": true,
+            "id": "vpc-09cc82f6295314f27",
+            "instance_tenancy": "default",
+            "ipv6_association_id": "",
+            "ipv6_cidr_block": "",
+            "main_route_table_id": "rtb-094275d701114db55",
+            "owner_id": "000152658638",
+            "tags": {}
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "tls_private_key",
+      "name": "hashicat",
+      "provider": "provider[\"registry.terraform.io/hashicorp/tls\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "algorithm": "RSA",
+            "ecdsa_curve": "P224",
+            "id": "b6ef36c9585381ea845f65e67c008229604bc948",
+            "private_key_pem": "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAz7wqVA24TbdCwu38c1kznpIEaizkyGH4KObvfI6xAM0QWzuc\nMPkEMnBWCJk1XPJZyuTvucMMBG792pGBr4Xnhm2FScqH0JxvFAVD5444W8gY81uD\net0wad+Gh0U0CSophGvIPsoOTToQxNegjSn23Jhw4ceI4YGFMjpsxRd74qiHo66d\nsQ2Mhesu325djCoE0rcAIdgVpjmeLC0l9eHV1i/muD02jSG6qUI6wCureb17SPc3\n1SGNauEneGJp3Cti5Bm3NUZX+tlC7Kym/8zGo+ggQ0tPmgKRcTR3uSvwAixCM9Dn\ncgqh+GKjpH/DISUjmXZY2sGOODayROubQgR8awIDAQABAoIBAH7DnDDejnEeO6co\nAr2A2XcSM493BcUhw4VyJwIjMPAEMs75eT6JNn5w/o8QrvehDBo7ye3ZkCPEdzRB\nRpoNZFMr0gJNjMNIMqBM9jr/FnUrjc4zMfBvuXNh633wROiyydL80p0+P6vwmvsD\nef2qdfH3NCsSz/yMRPN5o5ZB1l9gzjQ97awHVIbCg9oCesK6OdU37SoLr1KVT8ci\nncHxcywAsOSWG8pS8FFUZW3ELFCBueqKChzvnWzgI/vrP/MLXRGqH8QDTu9tr+7d\nKybpqR111ioE6Mi2RS7ULb9NwSp29YGTFboxO9Gqz3hGjR1jt32aM7o+JEqCUqnZ\nDop0yUECgYEA2WHx6eFpp5hKQ/bypfLFWWVx3Wh8wKNb1lOdKwxqedKPpCR+aBza\n2s29ZhDGimkeMD1Vs/o6l8xCJoyZjKQB6+Mc2Yfupaa0tJGc07AqQ9DjsMVh5QvO\njIoh+dAuoXqfU5zCPp5ZUTuxaVZ9mqmgwR0gyJp1sidWzfECl5DPJPUCgYEA9KN4\nlJyNNF4XqE5Mxy9bKqL6dLLzNoBAI/HYTxKKvEEn75UvhIoYTrNJ5VCLHSSbVZ5f\nyFRpvDxDBkWp23AdEj26b+Tv7P+Djh8qFVid9AEqGmGfwgmtWYVAgCQdaZ5JfQCZ\nCLW9xa7FmiaJunEpZ3HTRq9O4/K4emX2r2CvP98CgYBPTgk4XvDxoIBvfRcW7ZOL\nwpOgx67DhJVLgqOTAeuSV/vpURsAlo5NRsOzCam08xZ9WNL8XuyjVnRHpgGaqna8\n/NUYkxvAOSoxufGx1NIGfZ2jbs8BBaar5PTyMz3f0WFw2n6O46wIE7Psjw4xr3Kj\nISJFrPwFK47igOuGKeE4RQKBgHbO/TyPWzRXjf27KSaDJS9rv171mZCacIwEZBzi\n0GXk7tQ4C7++oVd3Uyf/GdCpepb2N2Y/OKqmSZa+NmPP6w501BqLgMoEvYtEL1f2\nlZ9vAVeWmdPOh1W2lUCmSXKF4QLIS4ojWWqsGmNm2/SkCIuoiAcIFLQ3qMgoxMkf\nl3zZAoGBAM4a1IGdGEQcoySoJqm8qjVg1PPA7k4RxHS8leYGNdFPog4OzQ8sG4C9\nsFeWxvqsVJn/6y+URV22YBC9TMuwZjX6Qfx1GmnOECccQu3MxuBYu5dv5ExvBAbp\nHUufrolxR/5znPNEM2960bjxn+y4L1JCgzoyYRrEqyFlu7GtocDy\n-----END RSA PRIVATE KEY-----\n",
+            "public_key_fingerprint_md5": "23:b8:3d:18:8b:a1:ba:e7:d5:73:8f:cc:53:c0:20:fb",
+            "public_key_openssh": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPvCpUDbhNt0LC7fxzWTOekgRqLOTIYfgo5u98jrEAzRBbO5ww+QQycFYImTVc8lnK5O+5wwwEbv3akYGvheeGbYVJyofQnG8UBUPnjjhbyBjzW4N63TBp34aHRTQJKimEa8g+yg5NOhDE16CNKfbcmHDhx4jhgYUyOmzFF3viqIejrp2xDYyF6y7fbl2MKgTStwAh2BWmOZ4sLSX14dXWL+a4PTaNIbqpQjrAK6t5vXtI9zfVIY1q4Sd4YmncK2LkGbc1Rlf62ULsrKb/zMaj6CBDS0+aApFxNHe5K/ACLEIz0OdyCqH4YqOkf8MhJSOZdljawY44NrJE65tCBHxr\n",
+            "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz7wqVA24TbdCwu38c1kz\nnpIEaizkyGH4KObvfI6xAM0QWzucMPkEMnBWCJk1XPJZyuTvucMMBG792pGBr4Xn\nhm2FScqH0JxvFAVD5444W8gY81uDet0wad+Gh0U0CSophGvIPsoOTToQxNegjSn2\n3Jhw4ceI4YGFMjpsxRd74qiHo66dsQ2Mhesu325djCoE0rcAIdgVpjmeLC0l9eHV\n1i/muD02jSG6qUI6wCureb17SPc31SGNauEneGJp3Cti5Bm3NUZX+tlC7Kym/8zG\no+ggQ0tPmgKRcTR3uSvwAixCM9Dncgqh+GKjpH/DISUjmXZY2sGOODayROubQgR8\nawIDAQAB\n-----END PUBLIC KEY-----\n",
+            "rsa_bits": 2048
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
